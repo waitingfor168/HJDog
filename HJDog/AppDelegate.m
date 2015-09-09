@@ -8,7 +8,13 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
+#import <CoreLocation/CoreLocation.h>
+
+@interface AppDelegate () <CLLocationManagerDelegate> {
+
+    CLLocationManager *locationManager;
+}
+
 
 @end
 
@@ -17,7 +23,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    locationManager = [[CLLocationManager alloc] init];
+//    locationManager.delegate=self;
+//    locationManager.desiredAccuracy=kCLLocationAccuracyBest;
+//    locationManager.distanceFilter=1000.0f;
+//    [locationManager startUpdatingLocation];
+//
+//    if ([[UIDevice currentDevice].systemVersion floatValue] >= 8.0) {
+//      [locationManager requestWhenInUseAuthorization];
+//    }
     return YES;
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

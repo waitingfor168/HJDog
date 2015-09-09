@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D210F67C1B88C5AC00E153D3 /* 111@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D210F67B1B88C5AC00E153D3 /* 111@2x.png */; };
+		D228860B1B67CA0C00EB4708 /* 123.html in Resources */ = {isa = PBXBuildFile; fileRef = D228860A1B67CA0C00EB4708 /* 123.html */; };
 		D27E0E101B5F45DB00ED0138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E0E0F1B5F45DB00ED0138 /* main.m */; };
 		D27E0E131B5F45DB00ED0138 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E0E121B5F45DB00ED0138 /* AppDelegate.m */; };
 		D27E0E161B5F45DB00ED0138 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E0E151B5F45DB00ED0138 /* ViewController.m */; };
@@ -14,6 +16,7 @@
 		D27E0E1B1B5F45DB00ED0138 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D27E0E1A1B5F45DB00ED0138 /* Images.xcassets */; };
 		D27E0E1E1B5F45DB00ED0138 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D27E0E1C1B5F45DB00ED0138 /* LaunchScreen.xib */; };
 		D27E0E2A1B5F45DC00ED0138 /* HJDogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E0E291B5F45DC00ED0138 /* HJDogTests.m */; };
+		D2ABED801B66580D00C6D968 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2ABED7F1B66580D00C6D968 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D210F67B1B88C5AC00E153D3 /* 111@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "111@2x.png"; sourceTree = "<group>"; };
+		D228860A1B67CA0C00EB4708 /* 123.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 123.html; sourceTree = "<group>"; };
 		D27E0E0A1B5F45DB00ED0138 /* HJDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27E0E0E1B5F45DB00ED0138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D27E0E0F1B5F45DB00ED0138 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,7 @@
 		D27E0E231B5F45DC00ED0138 /* HJDogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJDogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27E0E281B5F45DC00ED0138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D27E0E291B5F45DC00ED0138 /* HJDogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJDogTests.m; sourceTree = "<group>"; };
+		D2ABED7F1B66580D00C6D968 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2ABED801B66580D00C6D968 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +70,7 @@
 		D27E0E011B5F45DB00ED0138 = {
 			isa = PBXGroup;
 			children = (
+				D2ABED7F1B66580D00C6D968 /* CoreLocation.framework */,
 				D27E0E0C1B5F45DB00ED0138 /* HJDog */,
 				D27E0E261B5F45DC00ED0138 /* HJDogTests */,
 				D27E0E0B1B5F45DB00ED0138 /* Products */,
@@ -88,6 +96,8 @@
 				D27E0E171B5F45DB00ED0138 /* Main.storyboard */,
 				D27E0E1A1B5F45DB00ED0138 /* Images.xcassets */,
 				D27E0E1C1B5F45DB00ED0138 /* LaunchScreen.xib */,
+				D228860A1B67CA0C00EB4708 /* 123.html */,
+				D210F67B1B88C5AC00E153D3 /* 111@2x.png */,
 				D27E0E0D1B5F45DB00ED0138 /* Supporting Files */,
 			);
 			path = HJDog;
@@ -199,7 +209,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D210F67C1B88C5AC00E153D3 /* 111@2x.png in Resources */,
 				D27E0E191B5F45DB00ED0138 /* Main.storyboard in Resources */,
+				D228860B1B67CA0C00EB4708 /* 123.html in Resources */,
 				D27E0E1E1B5F45DB00ED0138 /* LaunchScreen.xib in Resources */,
 				D27E0E1B1B5F45DB00ED0138 /* Images.xcassets in Resources */,
 			);
@@ -348,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HJDog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HJDog/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +430,7 @@
 				D27E0E2F1B5F45DC00ED0138 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D27E0E301B5F45DC00ED0138 /* Build configuration list for PBXNativeTarget "HJDogTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +439,7 @@
 				D27E0E321B5F45DC00ED0138 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
