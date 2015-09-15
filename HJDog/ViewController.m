@@ -26,6 +26,7 @@
     NSString *htmlString = [[NSString alloc] initWithContentsOfFile:pathString encoding:NSUTF8StringEncoding error:nil];
     [self.webViewLogin loadHTMLString:htmlString baseURL:nil];
     
+//     [self.webViewLogin loadRequest:[[NSURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:@"http://180.76.154.254/mobile/embed/123.html"]]];
     self.webViewLogin.delegate = self;
     
 }
@@ -113,4 +114,9 @@
 {
     [self.webViewLogin stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"%@('%@');", callback, data]];
 }
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+
+}
+
 @end
