@@ -111,22 +111,19 @@
 
 - (NSString *)description {
 
-    unsigned int index = 0;
+    unsigned int count = 0;
+    Ivar *ivars = class_copyIvarList([self class], &count);
     NSMutableDictionary *dictionary = [NSMutableDictionary dictionary];
 
-    Ivar *ivars = class_copyIvarList([self class], &index);
-    for (int i = 0; i < index; i++) {
+    for (int index = 0; index < count; index++) {
 
-        Ivar ivar = ivars[i];
-
-        const char *name = ivar_getName(ivar);
-
+        const char *name = ivar_getName(ivars[index]);
         NSString *key = [NSString stringWithUTF8String:name];
         id value = [self valueForKey:key];
         
         dictionary[key] = value;
     }
-    //释放获取的变量数组
+
     free(ivars);
 
     return dictionary.description;
