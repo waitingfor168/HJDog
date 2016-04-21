@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "HJAccountInfo.h"
+
 @interface ViewController () <UIWebViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate> {
     
     NSString *callback; // 定义变量用于保存返回函数
@@ -22,13 +24,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self p_testInfo];
+//    [self p_testWebView];
+}
+
+- (void)p_testInfo {
+
+    NSDictionary *dictionary = @{@"accountId" : @"15988889595"
+                                 , @"accountName" : @"Dream"
+                                 , @"accountCode" : @"200"
+                                 , @"accountMark" : @"1"};
+    HJAccountInfo *accountInfo = [HJAccountInfo objectForDictionary:dictionary];
+    NSLog(@"accountInfo:%@", accountInfo);
+
+    // NSUserDefaults 只支持基本的数据类型存储, 所以使用NSKeyedArchiver序列化
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:accountInfo];
+    [[NSUserDefaults standardUserDefaults] setObject:data forKey:@"accountInfo"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    NSData *dataResult = [[NSUserDefaults standardUserDefaults] objectForKey:@"accountInfo"];
+    HJAccountInfo *accountInfoResult = [NSKeyedUnarchiver unarchiveObjectWithData:dataResult];
+    NSLog(@"accountInfoResult:%@", accountInfoResult);
+}
+
+- (void)p_testWebView {
+
     NSString *pathString = [[NSBundle mainBundle] pathForResource:@"123" ofType:@"html"];
     NSString *htmlString = [[NSString alloc] initWithContentsOfFile:pathString encoding:NSUTF8StringEncoding error:nil];
     [self.webViewLogin loadHTMLString:htmlString baseURL:nil];
     
-//     [self.webViewLogin loadRequest:[[NSURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:@"http://180.76.154.254/mobile/embed/123.html"]]];
+    //     [self.webViewLogin loadRequest:[[NSURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:@"http://180.76.154.254/mobile/embed/123.html"]]];
     self.webViewLogin.delegate = self;
-    
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType

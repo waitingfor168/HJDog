@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D210F67C1B88C5AC00E153D3 /* 111@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D210F67B1B88C5AC00E153D3 /* 111@2x.png */; };
+		D2180FE61CC8B49B002E7609 /* HJAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D2180FE51CC8B49B002E7609 /* HJAccountInfo.m */; };
 		D228860B1B67CA0C00EB4708 /* 123.html in Resources */ = {isa = PBXBuildFile; fileRef = D228860A1B67CA0C00EB4708 /* 123.html */; };
 		D24911171BA6DEE600658168 /* HJHeartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D24911161BA6DEE600658168 /* HJHeartView.m */; };
 		D27E0E101B5F45DB00ED0138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E0E0F1B5F45DB00ED0138 /* main.m */; };
@@ -34,6 +35,8 @@
 
 /* Begin PBXFileReference section */
 		D210F67B1B88C5AC00E153D3 /* 111@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "111@2x.png"; sourceTree = "<group>"; };
+		D2180FE41CC8B49B002E7609 /* HJAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAccountInfo.h; sourceTree = "<group>"; };
+		D2180FE51CC8B49B002E7609 /* HJAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAccountInfo.m; sourceTree = "<group>"; };
 		D228860A1B67CA0C00EB4708 /* 123.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 123.html; sourceTree = "<group>"; };
 		D24911151BA6DEE600658168 /* HJHeartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJHeartView.h; sourceTree = "<group>"; };
 		D24911161BA6DEE600658168 /* HJHeartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJHeartView.m; sourceTree = "<group>"; };
@@ -76,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D2180FE31CC8B450002E7609 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D2180FE41CC8B49B002E7609 /* HJAccountInfo.h */,
+				D2180FE51CC8B49B002E7609 /* HJAccountInfo.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D24911141BA6DEC700658168 /* HJHeartView */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +119,7 @@
 		D27E0E0C1B5F45DB00ED0138 /* HJDog */ = {
 			isa = PBXGroup;
 			children = (
+				D2180FE31CC8B450002E7609 /* Models */,
 				D2E637CC1BA7B22F002BE37E /* MTStatusBarOverlay */,
 				D24911141BA6DEC700658168 /* HJHeartView */,
 				D27E0E111B5F45DB00ED0138 /* AppDelegate.h */,
@@ -266,6 +279,7 @@
 				D27E0E131B5F45DB00ED0138 /* AppDelegate.m in Sources */,
 				D27E0E101B5F45DB00ED0138 /* main.m in Sources */,
 				D2E637C31BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m in Sources */,
+				D2180FE61CC8B49B002E7609 /* HJAccountInfo.m in Sources */,
 				D24911171BA6DEE600658168 /* HJHeartView.m in Sources */,
 				D2E637CF1BA7B22F002BE37E /* MTStatusBarOverlay.m in Sources */,
 			);
