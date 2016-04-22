@@ -18,6 +18,7 @@
 		D27E0E1B1B5F45DB00ED0138 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D27E0E1A1B5F45DB00ED0138 /* Images.xcassets */; };
 		D27E0E1E1B5F45DB00ED0138 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D27E0E1C1B5F45DB00ED0138 /* LaunchScreen.xib */; };
 		D27E0E2A1B5F45DC00ED0138 /* HJDogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E0E291B5F45DC00ED0138 /* HJDogTests.m */; };
+		D28579E21CC9C12100380C4B /* HJBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D28579E11CC9C12100380C4B /* HJBaseModel.m */; };
 		D2ABED801B66580D00C6D968 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2ABED7F1B66580D00C6D968 /* CoreLocation.framework */; };
 		D2E637C31BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E637C21BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m */; };
 		D2E637CF1BA7B22F002BE37E /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E637CE1BA7B22F002BE37E /* MTStatusBarOverlay.m */; };
@@ -53,6 +54,8 @@
 		D27E0E231B5F45DC00ED0138 /* HJDogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJDogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27E0E281B5F45DC00ED0138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D27E0E291B5F45DC00ED0138 /* HJDogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJDogTests.m; sourceTree = "<group>"; };
+		D28579E01CC9C12100380C4B /* HJBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJBaseModel.h; sourceTree = "<group>"; };
+		D28579E11CC9C12100380C4B /* HJBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJBaseModel.m; sourceTree = "<group>"; };
 		D2ABED7F1B66580D00C6D968 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D2E637C11BA7ACEA002BE37E /* TestVC_class_addMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC_class_addMethodViewController.h; sourceTree = "<group>"; };
 		D2E637C21BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC_class_addMethodViewController.m; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 			children = (
 				D2180FE41CC8B49B002E7609 /* HJAccountInfo.h */,
 				D2180FE51CC8B49B002E7609 /* HJAccountInfo.m */,
+				D28579E01CC9C12100380C4B /* HJBaseModel.h */,
+				D28579E11CC9C12100380C4B /* HJBaseModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 				D2E637C31BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m in Sources */,
 				D2180FE61CC8B49B002E7609 /* HJAccountInfo.m in Sources */,
 				D24911171BA6DEE600658168 /* HJHeartView.m in Sources */,
+				D28579E21CC9C12100380C4B /* HJBaseModel.m in Sources */,
 				D2E637CF1BA7B22F002BE37E /* MTStatusBarOverlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

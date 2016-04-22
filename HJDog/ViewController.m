@@ -45,6 +45,9 @@
     NSData *dataResult = [[NSUserDefaults standardUserDefaults] objectForKey:@"accountInfo"];
     HJAccountInfo *accountInfoResult = [NSKeyedUnarchiver unarchiveObjectWithData:dataResult];
     NSLog(@"accountInfoResult:%@", accountInfoResult);
+    
+    HJAccountInfo *accountInfoCopy = [accountInfoResult copy];
+    NSLog(@"accountInfoResult:%@", accountInfoCopy);
 }
 
 - (void)p_testWebView {

@@ -8,14 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HJAccountInfo : NSObject <NSCoding, NSCopying>
+#import "HJBaseModel.h"
+
+@interface HJAccountInfo : HJBaseModel
 
 @property (nonatomic, strong) NSString *accountId;
 @property (nonatomic, strong) NSString *accountName;
 @property (nonatomic, strong) NSString *accountCode;
 @property (nonatomic, strong) NSString *accountMark;
-
-+ (HJAccountInfo *)sharedInstance;
-+ (HJAccountInfo *)objectForDictionary:(NSDictionary *)dictioary;
 
 @end
