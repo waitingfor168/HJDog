@@ -100,27 +100,34 @@
 
 - (id)copyWithZone:(NSZone *)zone {
     
-    // 前提是获取到的model方法列表按顺序
-    HJBaseModel *baseModel = [[[self class] allocWithZone:zone] init];
+    id baseModel = [[[self class] allocWithZone:zone] init];
     
-    unsigned int count = 0;
-    Method *methods = class_copyMethodList([self class], &count);
+    unsigned int index = 0;
+    Ivar *ivars = class_copyIvarList([self class], &index);
     
-    for (int index = 0; index < count; index++) {
+    for (int i = 0 ; i < index; i++) {
         
-        SEL sel = method_getName(methods[index]);
-        NSString *nameSet = NSStringFromSelector(sel);
+        Ivar ivar = ivars[i];
+        const char *name = ivar_getName(ivar);
         
-        if (index % 2 == 1) {
-            
-            SEL sel0 = method_getName(methods[index - 1]);
-            NSString *nameGet = NSStringFromSelector(sel0);
-//            NSLog(@"sel:%@ : %@",nameGet , nameSet);
+        NSString *nameGet = nil;
+        NSString *nameSet = nil;
+        NSString *key = [NSString stringWithUTF8String:name];
         
-            ((void (*)(id, SEL, NSString *))(void *)objc_msgSend)((id)baseModel, sel_registerName([nameSet UTF8String]), (NSString *)((id (*)(id, SEL, NSZone * _Nullable))(void *)objc_msgSend)((id)((NSString *(*)(id, SEL))(void *)objc_msgSend)((id)self, sel_registerName([nameGet UTF8String])), sel_registerName("copyWithZone:"), (NSZone * _Nullable)zone));
+        // accountName
+        if ([key hasPrefix:@"_"]) {
+            nameGet = [key substringFromIndex:1];
         }
+        
+        // setAccountName:
+        NSString *capitalizedString = [[nameGet substringToIndex:1] uppercaseString];
+        NSMutableString *tempMutableString = [[NSMutableString alloc] initWithString:nameGet];
+        [tempMutableString replaceCharactersInRange:NSMakeRange(0, 1) withString:capitalizedString];
+        nameSet = [NSString stringWithFormat:@"set%@:", tempMutableString];
+        
+        ((void (*)(id, SEL, NSString *))(void *)objc_msgSend)((id)baseModel, sel_registerName([nameSet UTF8String]), (NSString *)((id (*)(id, SEL, NSZone * _Nullable))(void *)objc_msgSend)((id)((NSString *(*)(id, SEL))(void *)objc_msgSend)((id)self, sel_registerName([nameGet UTF8String])), sel_registerName("copyWithZone:"), (NSZone * _Nullable)zone));
     }
-    free(methods);
+    free(ivars);
     
     return baseModel;
 }
