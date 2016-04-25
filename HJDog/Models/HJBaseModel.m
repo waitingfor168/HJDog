@@ -85,9 +85,8 @@
         for (int i = 0 ; i < index; i++) {
 
             Ivar ivar = ivars[i];
-            const char *name = ivar_getName(ivar);
 
-            NSString *key = [NSString stringWithUTF8String:name];
+            NSString *key = @(ivar_getName(ivar));
             id value = [aDecoder decodeObjectForKey:key];
 
             [self setValue:value forKey:key];
@@ -101,23 +100,27 @@
 
 - (id)copyWithZone:(NSZone *)zone {
     
+    // 前提是获取到的model方法列表按顺序
     HJBaseModel *baseModel = [[[self class] allocWithZone:zone] init];
     
-//    unsigned int count = 0;
-//    Ivar *ivars = class_copyIvarList([self class], &count);
-//    
-//    for (int index = 0; index < count; index++) {
-//        
-//        const char *name = ivar_getName(ivars[index]);
-//
-//        Ivar ivarSelf = class_getInstanceVariable([self class], name);
-//        id accountIvarSelf = object_getIvar(self, ivarSelf);
-//        
-//        Ivar ivar = class_getInstanceVariable([baseModel class], name);
-//        id accountIvar = object_getIvar(baseModel, ivar);
-//        accountIvar = [accountIvarSelf copyWithZone:zone];
-//    }
-//    free(ivars);
+    unsigned int count = 0;
+    Method *methods = class_copyMethodList([self class], &count);
+    
+    for (int index = 0; index < count; index++) {
+        
+        SEL sel = method_getName(methods[index]);
+        NSString *nameSet = NSStringFromSelector(sel);
+        
+        if (index % 2 == 1) {
+            
+            SEL sel0 = method_getName(methods[index - 1]);
+            NSString *nameGet = NSStringFromSelector(sel0);
+//            NSLog(@"sel:%@ : %@",nameGet , nameSet);
+        
+            ((void (*)(id, SEL, NSString *))(void *)objc_msgSend)((id)baseModel, sel_registerName([nameSet UTF8String]), (NSString *)((id (*)(id, SEL, NSZone * _Nullable))(void *)objc_msgSend)((id)((NSString *(*)(id, SEL))(void *)objc_msgSend)((id)self, sel_registerName([nameGet UTF8String])), sel_registerName("copyWithZone:"), (NSZone * _Nullable)zone));
+        }
+    }
+    free(methods);
     
     return baseModel;
 }
