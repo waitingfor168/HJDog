@@ -11,6 +11,8 @@
 		D2180FE61CC8B49B002E7609 /* HJAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D2180FE51CC8B49B002E7609 /* HJAccountInfo.m */; };
 		D228860B1B67CA0C00EB4708 /* 123.html in Resources */ = {isa = PBXBuildFile; fileRef = D228860A1B67CA0C00EB4708 /* 123.html */; };
 		D24911171BA6DEE600658168 /* HJHeartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D24911161BA6DEE600658168 /* HJHeartView.m */; };
+		D276616D1D40601300CCE061 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D276616B1D40601300CCE061 /* MainViewController.m */; };
+		D276616E1D40601300CCE061 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D276616C1D40601300CCE061 /* MainViewController.xib */; };
 		D27E0E101B5F45DB00ED0138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E0E0F1B5F45DB00ED0138 /* main.m */; };
 		D27E0E131B5F45DB00ED0138 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E0E121B5F45DB00ED0138 /* AppDelegate.m */; };
 		D27E0E161B5F45DB00ED0138 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E0E151B5F45DB00ED0138 /* ViewController.m */; };
@@ -41,6 +43,9 @@
 		D228860A1B67CA0C00EB4708 /* 123.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 123.html; sourceTree = "<group>"; };
 		D24911151BA6DEE600658168 /* HJHeartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJHeartView.h; sourceTree = "<group>"; };
 		D24911161BA6DEE600658168 /* HJHeartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJHeartView.m; sourceTree = "<group>"; };
+		D276616A1D40601300CCE061 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		D276616B1D40601300CCE061 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		D276616C1D40601300CCE061 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		D27E0E0A1B5F45DB00ED0138 /* HJDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27E0E0E1B5F45DB00ED0138 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D27E0E0F1B5F45DB00ED0138 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -131,6 +136,9 @@
 				D27E0E121B5F45DB00ED0138 /* AppDelegate.m */,
 				D27E0E141B5F45DB00ED0138 /* ViewController.h */,
 				D27E0E151B5F45DB00ED0138 /* ViewController.m */,
+				D276616A1D40601300CCE061 /* MainViewController.h */,
+				D276616B1D40601300CCE061 /* MainViewController.m */,
+				D276616C1D40601300CCE061 /* MainViewController.xib */,
 				D2E637C11BA7ACEA002BE37E /* TestVC_class_addMethodViewController.h */,
 				D2E637C21BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m */,
 				D27E0E171B5F45DB00ED0138 /* Main.storyboard */,
@@ -260,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D210F67C1B88C5AC00E153D3 /* 111@2x.png in Resources */,
+				D276616E1D40601300CCE061 /* MainViewController.xib in Resources */,
 				D27E0E191B5F45DB00ED0138 /* Main.storyboard in Resources */,
 				D228860B1B67CA0C00EB4708 /* 123.html in Resources */,
 				D27E0E1E1B5F45DB00ED0138 /* LaunchScreen.xib in Resources */,
@@ -301,6 +310,7 @@
 				D27E0E131B5F45DB00ED0138 /* AppDelegate.m in Sources */,
 				D27E0E101B5F45DB00ED0138 /* main.m in Sources */,
 				D2E637C31BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m in Sources */,
+				D276616D1D40601300CCE061 /* MainViewController.m in Sources */,
 				D2180FE61CC8B49B002E7609 /* HJAccountInfo.m in Sources */,
 				D24911171BA6DEE600658168 /* HJHeartView.m in Sources */,
 				D28579E21CC9C12100380C4B /* HJBaseModel.m in Sources */,

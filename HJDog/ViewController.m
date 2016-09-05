@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #import "HJAccountInfo.h"
+#import "MainViewController.h"
 
 @interface ViewController () <UIWebViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate> {
     
@@ -24,8 +25,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self p_testInfo];
+//    [self p_testInfo];
 //    [self p_testWebView];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+//    [self performSelector:@selector(p_trst) withObject:nil afterDelay:3.0];
 }
 
 - (void)p_testInfo {
@@ -58,6 +65,14 @@
     
     //     [self.webViewLogin loadRequest:[[NSURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:@"http://180.76.154.254/mobile/embed/123.html"]]];
     self.webViewLogin.delegate = self;
+}
+
+- (void)p_trst {
+    
+    MainViewController *mainViewController = [[MainViewController alloc] init];
+    [self presentViewController:mainViewController animated:YES completion:^{
+        
+    }];
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
@@ -146,6 +161,11 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
 
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+
+   
 }
 
 @end
