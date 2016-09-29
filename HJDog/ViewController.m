@@ -10,6 +10,7 @@
 
 #import "HJAccountInfo.h"
 #import "MainViewController.h"
+#import "FingerPrintViewController.h"
 
 /** 弱引用 */
 #define WS __weak typeof(self) weakSelf = self;
@@ -43,7 +44,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-//    [self performSelector:@selector(p_trst) withObject:nil afterDelay:3.0];
+    [self performSelector:@selector(p_trst) withObject:nil afterDelay:2.0];
 }
 
 - (void)p_testInfo {
@@ -81,11 +82,17 @@
 - (void)p_trst {
     
    
-    MainViewController *mainViewController = [[MainViewController alloc] init];
-     WeakTast(mainViewController)
-    [self presentViewController:mainViewController animated:YES completion:^{
-        StrongTast(weak_mainViewController)
-        NSLog(@"==>>:%@", strong_weak_mainViewController);
+//    MainViewController *mainViewController = [[MainViewController alloc] init];
+//     WeakTast(mainViewController)
+//    [self presentViewController:mainViewController animated:YES completion:^{
+//        StrongTast(weak_mainViewController)
+//        NSLog(@"==>>:%@", strong_weak_mainViewController);
+//    }];
+    
+    
+    FingerPrintViewController *fingerPrintViewController = [[FingerPrintViewController alloc] init];
+    [self presentViewController:fingerPrintViewController animated:YES completion:^{
+
     }];
 }
 

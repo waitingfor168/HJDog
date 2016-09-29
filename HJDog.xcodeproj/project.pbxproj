@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D209860F1D9CEB530081F0FF /* FingerPrintViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D209860D1D9CEB530081F0FF /* FingerPrintViewController.m */; };
+		D20986101D9CEB530081F0FF /* FingerPrintViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D209860E1D9CEB530081F0FF /* FingerPrintViewController.xib */; };
 		D210F67C1B88C5AC00E153D3 /* 111@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D210F67B1B88C5AC00E153D3 /* 111@2x.png */; };
 		D2180FE61CC8B49B002E7609 /* HJAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D2180FE51CC8B49B002E7609 /* HJAccountInfo.m */; };
 		D228860B1B67CA0C00EB4708 /* 123.html in Resources */ = {isa = PBXBuildFile; fileRef = D228860A1B67CA0C00EB4708 /* 123.html */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D209860C1D9CEB530081F0FF /* FingerPrintViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FingerPrintViewController.h; sourceTree = "<group>"; };
+		D209860D1D9CEB530081F0FF /* FingerPrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FingerPrintViewController.m; sourceTree = "<group>"; };
+		D209860E1D9CEB530081F0FF /* FingerPrintViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FingerPrintViewController.xib; sourceTree = "<group>"; };
 		D210F67B1B88C5AC00E153D3 /* 111@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "111@2x.png"; sourceTree = "<group>"; };
 		D2180FE41CC8B49B002E7609 /* HJAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAccountInfo.h; sourceTree = "<group>"; };
 		D2180FE51CC8B49B002E7609 /* HJAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAccountInfo.m; sourceTree = "<group>"; };
@@ -139,6 +144,9 @@
 				D276616A1D40601300CCE061 /* MainViewController.h */,
 				D276616B1D40601300CCE061 /* MainViewController.m */,
 				D276616C1D40601300CCE061 /* MainViewController.xib */,
+				D209860C1D9CEB530081F0FF /* FingerPrintViewController.h */,
+				D209860D1D9CEB530081F0FF /* FingerPrintViewController.m */,
+				D209860E1D9CEB530081F0FF /* FingerPrintViewController.xib */,
 				D2E637C11BA7ACEA002BE37E /* TestVC_class_addMethodViewController.h */,
 				D2E637C21BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m */,
 				D27E0E171B5F45DB00ED0138 /* Main.storyboard */,
@@ -236,9 +244,11 @@
 				TargetAttributes = {
 					D27E0E091B5F45DB00ED0138 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 4W5H293S5Y;
 					};
 					D27E0E221B5F45DC00ED0138 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 4W5H293S5Y;
 						TestTargetID = D27E0E091B5F45DB00ED0138;
 					};
 				};
@@ -273,6 +283,7 @@
 				D228860B1B67CA0C00EB4708 /* 123.html in Resources */,
 				D27E0E1E1B5F45DB00ED0138 /* LaunchScreen.xib in Resources */,
 				D27E0E1B1B5F45DB00ED0138 /* Images.xcassets in Resources */,
+				D20986101D9CEB530081F0FF /* FingerPrintViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +326,7 @@
 				D24911171BA6DEE600658168 /* HJHeartView.m in Sources */,
 				D28579E21CC9C12100380C4B /* HJBaseModel.m in Sources */,
 				D2E637CF1BA7B22F002BE37E /* MTStatusBarOverlay.m in Sources */,
+				D209860F1D9CEB530081F0FF /* FingerPrintViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4W5H293S5Y;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = HJDog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -452,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4W5H293S5Y;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = HJDog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -464,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4W5H293S5Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -483,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4W5H293S5Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -535,6 +551,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4W5H293S5Y;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = HJDog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
@@ -547,6 +564,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4W5H293S5Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
