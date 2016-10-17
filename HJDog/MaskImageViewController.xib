@@ -3,11 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MaskImageViewController">
             <connections>
+                <outlet property="contentView" destination="gNW-JE-fmU" id="Egb-NG-FCf"/>
                 <outlet property="imageView" destination="Tcl-Eq-VCz" id="jlZ-hx-EBu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -17,17 +19,27 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tcl-Eq-VCz">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNW-JE-fmU">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="300" id="P9z-Kq-LHy"/>
-                        <constraint firstAttribute="height" constant="300" id="RvK-bL-kDV"/>
+                        <constraint firstAttribute="width" constant="240" id="ou7-hk-QeM"/>
+                        <constraint firstAttribute="width" secondItem="gNW-JE-fmU" secondAttribute="height" multiplier="1:1" id="yHi-yI-pa3"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tcl-Eq-VCz">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="RvK-bL-kDV"/>
+                        <constraint firstAttribute="width" secondItem="Tcl-Eq-VCz" secondAttribute="height" multiplier="1:1" id="zkZ-FV-8nM"/>
                     </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="Tcl-Eq-VCz" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="3C5-rT-83b"/>
+                <constraint firstItem="gNW-JE-fmU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LAq-3c-VGU"/>
                 <constraint firstItem="Tcl-Eq-VCz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="T6K-yN-XSi"/>
+                <constraint firstItem="Tcl-Eq-VCz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="YxR-9D-ddJ"/>
+                <constraint firstItem="gNW-JE-fmU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="256" id="w2i-i0-txc"/>
             </constraints>
         </view>
     </objects>
