@@ -10,6 +10,7 @@
 
 #import "HJAccountInfo.h"
 #import "MainViewController.h"
+#import "MaskImageViewController.h"
 #import "FingerPrintViewController.h"
 
 /** 弱引用 */
@@ -90,9 +91,14 @@
 //    }];
     
     
-    FingerPrintViewController *fingerPrintViewController = [[FingerPrintViewController alloc] init];
-    [self presentViewController:fingerPrintViewController animated:YES completion:^{
-
+//    FingerPrintViewController *fingerPrintViewController = [[FingerPrintViewController alloc] init];
+//    [self presentViewController:fingerPrintViewController animated:YES completion:^{
+//
+//    }];
+    
+    MaskImageViewController *maskImageViewController = [[MaskImageViewController alloc] init];
+    [self presentViewController:maskImageViewController animated:YES completion:^{
+        
     }];
 }
 
