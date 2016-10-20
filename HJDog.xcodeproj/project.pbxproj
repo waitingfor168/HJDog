@@ -14,6 +14,8 @@
 		D228860B1B67CA0C00EB4708 /* 123.html in Resources */ = {isa = PBXBuildFile; fileRef = D228860A1B67CA0C00EB4708 /* 123.html */; };
 		D22A265D1DB4756F0070974E /* MaskImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22A265B1DB4756F0070974E /* MaskImageViewController.m */; };
 		D22A265E1DB4756F0070974E /* MaskImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D22A265C1DB4756F0070974E /* MaskImageViewController.xib */; };
+		D241E88B1DB8AFA50013F16D /* TransformImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D241E8891DB8AFA50013F16D /* TransformImageViewController.m */; };
+		D241E88C1DB8AFA50013F16D /* TransformImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D241E88A1DB8AFA50013F16D /* TransformImageViewController.xib */; };
 		D24911171BA6DEE600658168 /* HJHeartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D24911161BA6DEE600658168 /* HJHeartView.m */; };
 		D276616D1D40601300CCE061 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D276616B1D40601300CCE061 /* MainViewController.m */; };
 		D276616E1D40601300CCE061 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D276616C1D40601300CCE061 /* MainViewController.xib */; };
@@ -51,6 +53,9 @@
 		D22A265A1DB4756F0070974E /* MaskImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaskImageViewController.h; sourceTree = "<group>"; };
 		D22A265B1DB4756F0070974E /* MaskImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaskImageViewController.m; sourceTree = "<group>"; };
 		D22A265C1DB4756F0070974E /* MaskImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MaskImageViewController.xib; sourceTree = "<group>"; };
+		D241E8881DB8AFA50013F16D /* TransformImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransformImageViewController.h; sourceTree = "<group>"; };
+		D241E8891DB8AFA50013F16D /* TransformImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransformImageViewController.m; sourceTree = "<group>"; };
+		D241E88A1DB8AFA50013F16D /* TransformImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransformImageViewController.xib; sourceTree = "<group>"; };
 		D24911151BA6DEE600658168 /* HJHeartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJHeartView.h; sourceTree = "<group>"; };
 		D24911161BA6DEE600658168 /* HJHeartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJHeartView.m; sourceTree = "<group>"; };
 		D276616A1D40601300CCE061 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -155,6 +160,9 @@
 				D22A265A1DB4756F0070974E /* MaskImageViewController.h */,
 				D22A265B1DB4756F0070974E /* MaskImageViewController.m */,
 				D22A265C1DB4756F0070974E /* MaskImageViewController.xib */,
+				D241E8881DB8AFA50013F16D /* TransformImageViewController.h */,
+				D241E8891DB8AFA50013F16D /* TransformImageViewController.m */,
+				D241E88A1DB8AFA50013F16D /* TransformImageViewController.xib */,
 				D2E637C11BA7ACEA002BE37E /* TestVC_class_addMethodViewController.h */,
 				D2E637C21BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m */,
 				D27E0E171B5F45DB00ED0138 /* Main.storyboard */,
@@ -293,6 +301,7 @@
 				D27E0E1E1B5F45DB00ED0138 /* LaunchScreen.xib in Resources */,
 				D27E0E1B1B5F45DB00ED0138 /* Images.xcassets in Resources */,
 				D20986101D9CEB530081F0FF /* FingerPrintViewController.xib in Resources */,
+				D241E88C1DB8AFA50013F16D /* TransformImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +338,7 @@
 				D22A265D1DB4756F0070974E /* MaskImageViewController.m in Sources */,
 				D27E0E161B5F45DB00ED0138 /* ViewController.m in Sources */,
 				D27E0E131B5F45DB00ED0138 /* AppDelegate.m in Sources */,
+				D241E88B1DB8AFA50013F16D /* TransformImageViewController.m in Sources */,
 				D27E0E101B5F45DB00ED0138 /* main.m in Sources */,
 				D2E637C31BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m in Sources */,
 				D276616D1D40601300CCE061 /* MainViewController.m in Sources */,

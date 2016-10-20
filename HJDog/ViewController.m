@@ -12,6 +12,7 @@
 #import "MainViewController.h"
 #import "MaskImageViewController.h"
 #import "FingerPrintViewController.h"
+#import "TransformImageViewController.h"
 
 /** 弱引用 */
 #define WS __weak typeof(self) weakSelf = self;
@@ -81,8 +82,7 @@
 }
 
 - (void)p_trst {
-    
-   
+
 //    MainViewController *mainViewController = [[MainViewController alloc] init];
 //     WeakTast(mainViewController)
 //    [self presentViewController:mainViewController animated:YES completion:^{
@@ -91,13 +91,10 @@
 //    }];
     
     
-//    FingerPrintViewController *fingerPrintViewController = [[FingerPrintViewController alloc] init];
-//    [self presentViewController:fingerPrintViewController animated:YES completion:^{
-//
-//    }];
-    
-    MaskImageViewController *maskImageViewController = [[MaskImageViewController alloc] init];
-    [self presentViewController:maskImageViewController animated:YES completion:^{
+//    FingerPrintViewController *viewController = [[FingerPrintViewController alloc] init];
+    MaskImageViewController *viewController = [[MaskImageViewController alloc] init];
+//    TransformImageViewController *viewController = [[TransformImageViewController alloc] init];
+    [self presentViewController:viewController animated:YES completion:^{
         
     }];
 }
