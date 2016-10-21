@@ -24,6 +24,7 @@
     self.view.backgroundColor = [UIColor redColor];
     
 //    self.imageView.image = [self maskImage:[UIImage imageNamed:@"111@2x"]];
+    [self addfilterLinkerWithImage:[UIImage imageNamed:@"111@2x"]];
 }
 
 - (void)viewDidLayoutSubviews {
@@ -51,6 +52,40 @@
     UIImage *retImage = [UIImage imageWithCGImage:masked scale:1.0 orientation:UIImageOrientationLeftMirrored];
     CGImageRelease(masked);
     return retImage;
+}
+
+#pragma mark===滤镜链
+//再次添加滤镜 形成滤镜链
+- (void)addfilterLinkerWithImage:(UIImage *)image {
+    
+    //   1. 需要有一个输入的原图
+    CIImage *inputImage = [CIImage imageWithCGImage:image.CGImage];
+    //   2. 需要一个滤镜
+    CIFilter *filter = [CIFilter filterWithName:@"CIBumpDistortion"];
+    //     通过打印可以设置的属性里面 得到可以设置 inputImage ——》在接口文件里面查找得到的key
+    
+    // 这里我们使用的是KVC的方式给filter设置属性
+    [filter setValue:inputImage forKey:kCIInputImageKey];
+    // 设置凹凸的效果半径  越大越明显
+    [filter setValue:@500 forKey:kCIInputRadiusKey];
+    // CIVector :表示 X Y 坐标的一个类
+    // 设置中心点的
+    [filter setValue:[CIVector vectorWithX:200 Y:200] forKey:kCIInputCenterKey];
+    
+    //    3.有一个CIContext的对象去合并原图和滤镜效果
+    CIImage *outputImage = filter.outputImage;
+    //      创建一个图像操作的上下文
+    CIContext *context = [CIContext contextWithOptions:nil];
+    //      把原图和滤镜合并起来  包含原图和滤镜效果的图像
+    /**
+     *  Image :   合成之后的图像
+     *  fromRect:  合成之后图像的尺寸： 图像.extent
+     */
+    CGImageRef imageRef = [context createCGImage:outputImage fromRect:outputImage.extent];
+    self.imageView.image = [UIImage imageWithCGImage:imageRef];
+    
+    //保存图片到相册  不可以直接保存outputImage 因为这是一个没有合成的图像
+    //    UIImageWriteToSavedPhotosAlbum(self.imageView.image, nil, nil, nil);
 }
 
 - (AVCaptureDevice *)getFrontCamera
@@ -181,9 +216,9 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
 {
     // Create a UIImage from the sample buffer data
     
-    UIImage *image = [self imageFromSampleBuffer:sampleBuffer];
-    //得到的视频流图片
-    self.imageView.image = image;
+//    UIImage *image = [self imageFromSampleBuffer:sampleBuffer];
+//    //得到的视频流图片
+//    self.imageView.image = image;
 }
 
 - (void)captureOutput:(AVCaptureFileOutput *)captureOutput didFinishRecordingToOutputFileAtURL:(NSURL *)outputFileURL fromConnections:(NSArray *)connections error:(NSError *)error {
