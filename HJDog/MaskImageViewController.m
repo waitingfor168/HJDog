@@ -23,7 +23,10 @@
     
     self.view.backgroundColor = [UIColor redColor];
     
+    // mask method 1
 //    self.imageView.image = [self maskImage:[UIImage imageNamed:@"111@2x"]];
+    // mask method 2
+    
     [self addfilterLinkerWithImage:[UIImage imageNamed:@"111@2x"]];
 }
 
