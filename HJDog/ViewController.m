@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #import "HJAccountInfo.h"
+#import "ScanViewController.h"
 #import "MainViewController.h"
 #import "MaskImageViewController.h"
 #import "FingerPrintViewController.h"
@@ -46,7 +47,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    [self performSelector:@selector(p_trst) withObject:nil afterDelay:2.0];
+//    [self performSelector:@selector(p_trst) withObject:nil afterDelay:2.0];
 }
 
 - (void)p_testInfo {
@@ -81,6 +82,12 @@
     self.webViewLogin.delegate = self;
 }
 
+- (IBAction)rightAction:(id)sender {
+    
+    ScanViewController *viewController = [[ScanViewController alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
 - (void)p_trst {
 
 //    MainViewController *mainViewController = [[MainViewController alloc] init];
@@ -90,13 +97,12 @@
 //        NSLog(@"==>>:%@", strong_weak_mainViewController);
 //    }];
     
-    
 //    FingerPrintViewController *viewController = [[FingerPrintViewController alloc] init];
-    MaskImageViewController *viewController = [[MaskImageViewController alloc] init];
+//    MaskImageViewController *viewController = [[MaskImageViewController alloc] init];
 //    TransformImageViewController *viewController = [[TransformImageViewController alloc] init];
-    [self presentViewController:viewController animated:YES completion:^{
-        
-    }];
+//    [self presentViewController:viewController animated:YES completion:^{
+//        
+//    }];
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
@@ -189,7 +195,7 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
-   
+
 }
 
 @end

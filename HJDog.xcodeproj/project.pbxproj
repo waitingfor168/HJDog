@@ -28,6 +28,9 @@
 		D27E0E2A1B5F45DC00ED0138 /* HJDogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E0E291B5F45DC00ED0138 /* HJDogTests.m */; };
 		D28579E21CC9C12100380C4B /* HJBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D28579E11CC9C12100380C4B /* HJBaseModel.m */; };
 		D2ABED801B66580D00C6D968 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2ABED7F1B66580D00C6D968 /* CoreLocation.framework */; };
+		D2D901441E77FC1E008AADC1 /* HJScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D901431E77FC1E008AADC1 /* HJScanManager.m */; };
+		D2DBC1521E78D6EA00B19F1D /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DBC1501E78D6EA00B19F1D /* ScanViewController.m */; };
+		D2DBC1531E78D6EA00B19F1D /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2DBC1511E78D6EA00B19F1D /* ScanViewController.xib */; };
 		D2E637C31BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E637C21BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m */; };
 		D2E637CF1BA7B22F002BE37E /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E637CE1BA7B22F002BE37E /* MTStatusBarOverlay.m */; };
 /* End PBXBuildFile section */
@@ -77,6 +80,11 @@
 		D28579E01CC9C12100380C4B /* HJBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJBaseModel.h; sourceTree = "<group>"; };
 		D28579E11CC9C12100380C4B /* HJBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJBaseModel.m; sourceTree = "<group>"; };
 		D2ABED7F1B66580D00C6D968 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D2D901421E77FC1E008AADC1 /* HJScanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJScanManager.h; sourceTree = "<group>"; };
+		D2D901431E77FC1E008AADC1 /* HJScanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJScanManager.m; sourceTree = "<group>"; };
+		D2DBC14F1E78D6EA00B19F1D /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		D2DBC1501E78D6EA00B19F1D /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		D2DBC1511E78D6EA00B19F1D /* ScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
 		D2E637C11BA7ACEA002BE37E /* TestVC_class_addMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC_class_addMethodViewController.h; sourceTree = "<group>"; };
 		D2E637C21BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC_class_addMethodViewController.m; sourceTree = "<group>"; };
 		D2E637CD1BA7B22F002BE37E /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTStatusBarOverlay.h; sourceTree = "<group>"; };
@@ -144,6 +152,7 @@
 		D27E0E0C1B5F45DB00ED0138 /* HJDog */ = {
 			isa = PBXGroup;
 			children = (
+				D2D901411E77FBF8008AADC1 /* HJScan */,
 				D2180FE31CC8B450002E7609 /* Models */,
 				D2E637CC1BA7B22F002BE37E /* MTStatusBarOverlay */,
 				D24911141BA6DEC700658168 /* HJHeartView */,
@@ -151,6 +160,9 @@
 				D27E0E121B5F45DB00ED0138 /* AppDelegate.m */,
 				D27E0E141B5F45DB00ED0138 /* ViewController.h */,
 				D27E0E151B5F45DB00ED0138 /* ViewController.m */,
+				D2DBC14F1E78D6EA00B19F1D /* ScanViewController.h */,
+				D2DBC1501E78D6EA00B19F1D /* ScanViewController.m */,
+				D2DBC1511E78D6EA00B19F1D /* ScanViewController.xib */,
 				D276616A1D40601300CCE061 /* MainViewController.h */,
 				D276616B1D40601300CCE061 /* MainViewController.m */,
 				D276616C1D40601300CCE061 /* MainViewController.xib */,
@@ -199,6 +211,15 @@
 				D27E0E281B5F45DC00ED0138 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2D901411E77FBF8008AADC1 /* HJScan */ = {
+			isa = PBXGroup;
+			children = (
+				D2D901421E77FC1E008AADC1 /* HJScanManager.h */,
+				D2D901431E77FC1E008AADC1 /* HJScanManager.m */,
+			);
+			path = HJScan;
 			sourceTree = "<group>";
 		};
 		D2E637CC1BA7B22F002BE37E /* MTStatusBarOverlay */ = {
@@ -296,6 +317,7 @@
 				D210F67C1B88C5AC00E153D3 /* 111@2x.png in Resources */,
 				D276616E1D40601300CCE061 /* MainViewController.xib in Resources */,
 				D22A265E1DB4756F0070974E /* MaskImageViewController.xib in Resources */,
+				D2DBC1531E78D6EA00B19F1D /* ScanViewController.xib in Resources */,
 				D27E0E191B5F45DB00ED0138 /* Main.storyboard in Resources */,
 				D228860B1B67CA0C00EB4708 /* 123.html in Resources */,
 				D27E0E1E1B5F45DB00ED0138 /* LaunchScreen.xib in Resources */,
@@ -339,12 +361,14 @@
 				D27E0E161B5F45DB00ED0138 /* ViewController.m in Sources */,
 				D27E0E131B5F45DB00ED0138 /* AppDelegate.m in Sources */,
 				D241E88B1DB8AFA50013F16D /* TransformImageViewController.m in Sources */,
+				D2D901441E77FC1E008AADC1 /* HJScanManager.m in Sources */,
 				D27E0E101B5F45DB00ED0138 /* main.m in Sources */,
 				D2E637C31BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m in Sources */,
 				D276616D1D40601300CCE061 /* MainViewController.m in Sources */,
 				D2180FE61CC8B49B002E7609 /* HJAccountInfo.m in Sources */,
 				D24911171BA6DEE600658168 /* HJHeartView.m in Sources */,
 				D28579E21CC9C12100380C4B /* HJBaseModel.m in Sources */,
+				D2DBC1521E78D6EA00B19F1D /* ScanViewController.m in Sources */,
 				D2E637CF1BA7B22F002BE37E /* MTStatusBarOverlay.m in Sources */,
 				D209860F1D9CEB530081F0FF /* FingerPrintViewController.m in Sources */,
 			);
