@@ -51,9 +51,24 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="BUx-F7-F1u">
-                        <barButtonItem key="rightBarButtonItem" title="Scan" id="7wC-8w-DLL">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="sVC-Jw-xMK">
+                            <view key="customView" contentMode="scaleToFill" id="yKg-dp-gbp">
+                                <rect key="frame" x="309" y="-3" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zp-tu-zhf">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="scanner"/>
+                                        <connections>
+                                            <action selector="rightAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RCX-KP-qAu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <connections>
-                                <action selector="rightAction:" destination="vXZ-lx-hvc" id="fsd-Md-rac"/>
+                                <action selector="rightAction:" destination="vXZ-lx-hvc" id="Ez1-0x-uZ2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -66,4 +81,7 @@
             <point key="canvasLocation" x="278" y="215"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="scanner" width="32" height="32"/>
+    </resources>
 </document>

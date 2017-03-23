@@ -29,12 +29,12 @@ typedef void(^CaptureOutputText)(HJScanManager *manager, NSString *message);
 - (void)sessionStop;
 
 /**
- 切换摄像头
+ * 切换摄像头
  */
 - (void)cameraToggle;
 
 /**
- 是否为前置摄像头
+ * 是否为前置摄像头
  */
 @property (nonatomic, assign) BOOL isFront;
 

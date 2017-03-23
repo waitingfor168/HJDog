@@ -33,6 +33,12 @@
 		D2DBC1531E78D6EA00B19F1D /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2DBC1511E78D6EA00B19F1D /* ScanViewController.xib */; };
 		D2E637C31BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E637C21BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m */; };
 		D2E637CF1BA7B22F002BE37E /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E637CE1BA7B22F002BE37E /* MTStatusBarOverlay.m */; };
+		D2FC81131E83720000185C55 /* HJPrivacy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FC81121E83720000185C55 /* HJPrivacy.m */; };
+		D2FC81161E83752700185C55 /* HJImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FC81151E83752700185C55 /* HJImagePickerController.m */; };
+		D2FC81191E83950300185C55 /* UIImage+HJDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FC81181E83950300185C55 /* UIImage+HJDetector.m */; };
+		D2FC811C1E83A0B000185C55 /* NSString+HJGenerateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FC811B1E83A0B000185C55 /* NSString+HJGenerateImage.m */; };
+		D2FC81201E83A55800185C55 /* GenerateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FC811E1E83A55800185C55 /* GenerateViewController.m */; };
+		D2FC81211E83A55800185C55 /* GenerateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FC811F1E83A55800185C55 /* GenerateViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +95,19 @@
 		D2E637C21BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC_class_addMethodViewController.m; sourceTree = "<group>"; };
 		D2E637CD1BA7B22F002BE37E /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTStatusBarOverlay.h; sourceTree = "<group>"; };
 		D2E637CE1BA7B22F002BE37E /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTStatusBarOverlay.m; sourceTree = "<group>"; };
+		D2FC810E1E83717100185C55 /* HJHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJHeader.h; sourceTree = "<group>"; };
+		D2FC810F1E83717100185C55 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D2FC81111E83720000185C55 /* HJPrivacy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPrivacy.h; sourceTree = "<group>"; };
+		D2FC81121E83720000185C55 /* HJPrivacy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPrivacy.m; sourceTree = "<group>"; };
+		D2FC81141E83752600185C55 /* HJImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJImagePickerController.h; sourceTree = "<group>"; };
+		D2FC81151E83752700185C55 /* HJImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJImagePickerController.m; sourceTree = "<group>"; };
+		D2FC81171E83950200185C55 /* UIImage+HJDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HJDetector.h"; sourceTree = "<group>"; };
+		D2FC81181E83950300185C55 /* UIImage+HJDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HJDetector.m"; sourceTree = "<group>"; };
+		D2FC811A1E83A0B000185C55 /* NSString+HJGenerateImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HJGenerateImage.h"; sourceTree = "<group>"; };
+		D2FC811B1E83A0B000185C55 /* NSString+HJGenerateImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HJGenerateImage.m"; sourceTree = "<group>"; };
+		D2FC811D1E83A55800185C55 /* GenerateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenerateViewController.h; sourceTree = "<group>"; };
+		D2FC811E1E83A55800185C55 /* GenerateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenerateViewController.m; sourceTree = "<group>"; };
+		D2FC811F1E83A55800185C55 /* GenerateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenerateViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +171,7 @@
 		D27E0E0C1B5F45DB00ED0138 /* HJDog */ = {
 			isa = PBXGroup;
 			children = (
+				D2FC81101E8371D600185C55 /* HJUnits */,
 				D2D901411E77FBF8008AADC1 /* HJScan */,
 				D2180FE31CC8B450002E7609 /* Models */,
 				D2E637CC1BA7B22F002BE37E /* MTStatusBarOverlay */,
@@ -160,6 +180,9 @@
 				D27E0E121B5F45DB00ED0138 /* AppDelegate.m */,
 				D27E0E141B5F45DB00ED0138 /* ViewController.h */,
 				D27E0E151B5F45DB00ED0138 /* ViewController.m */,
+				D2FC811D1E83A55800185C55 /* GenerateViewController.h */,
+				D2FC811E1E83A55800185C55 /* GenerateViewController.m */,
+				D2FC811F1E83A55800185C55 /* GenerateViewController.xib */,
 				D2DBC14F1E78D6EA00B19F1D /* ScanViewController.h */,
 				D2DBC1501E78D6EA00B19F1D /* ScanViewController.m */,
 				D2DBC1511E78D6EA00B19F1D /* ScanViewController.xib */,
@@ -177,6 +200,8 @@
 				D241E88A1DB8AFA50013F16D /* TransformImageViewController.xib */,
 				D2E637C11BA7ACEA002BE37E /* TestVC_class_addMethodViewController.h */,
 				D2E637C21BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m */,
+				D2FC810E1E83717100185C55 /* HJHeader.h */,
+				D2FC810F1E83717100185C55 /* PrefixHeader.pch */,
 				D27E0E171B5F45DB00ED0138 /* Main.storyboard */,
 				D27E0E1A1B5F45DB00ED0138 /* Images.xcassets */,
 				D27E0E1C1B5F45DB00ED0138 /* LaunchScreen.xib */,
@@ -218,6 +243,12 @@
 			children = (
 				D2D901421E77FC1E008AADC1 /* HJScanManager.h */,
 				D2D901431E77FC1E008AADC1 /* HJScanManager.m */,
+				D2FC81141E83752600185C55 /* HJImagePickerController.h */,
+				D2FC81151E83752700185C55 /* HJImagePickerController.m */,
+				D2FC81171E83950200185C55 /* UIImage+HJDetector.h */,
+				D2FC81181E83950300185C55 /* UIImage+HJDetector.m */,
+				D2FC811A1E83A0B000185C55 /* NSString+HJGenerateImage.h */,
+				D2FC811B1E83A0B000185C55 /* NSString+HJGenerateImage.m */,
 			);
 			path = HJScan;
 			sourceTree = "<group>";
@@ -229,6 +260,15 @@
 				D2E637CE1BA7B22F002BE37E /* MTStatusBarOverlay.m */,
 			);
 			path = MTStatusBarOverlay;
+			sourceTree = "<group>";
+		};
+		D2FC81101E8371D600185C55 /* HJUnits */ = {
+			isa = PBXGroup;
+			children = (
+				D2FC81111E83720000185C55 /* HJPrivacy.h */,
+				D2FC81121E83720000185C55 /* HJPrivacy.m */,
+			);
+			path = HJUnits;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,6 +354,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2FC81211E83A55800185C55 /* GenerateViewController.xib in Resources */,
 				D210F67C1B88C5AC00E153D3 /* 111@2x.png in Resources */,
 				D276616E1D40601300CCE061 /* MainViewController.xib in Resources */,
 				D22A265E1DB4756F0070974E /* MaskImageViewController.xib in Resources */,
@@ -364,9 +405,14 @@
 				D2D901441E77FC1E008AADC1 /* HJScanManager.m in Sources */,
 				D27E0E101B5F45DB00ED0138 /* main.m in Sources */,
 				D2E637C31BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m in Sources */,
+				D2FC81201E83A55800185C55 /* GenerateViewController.m in Sources */,
 				D276616D1D40601300CCE061 /* MainViewController.m in Sources */,
+				D2FC811C1E83A0B000185C55 /* NSString+HJGenerateImage.m in Sources */,
+				D2FC81191E83950300185C55 /* UIImage+HJDetector.m in Sources */,
 				D2180FE61CC8B49B002E7609 /* HJAccountInfo.m in Sources */,
 				D24911171BA6DEE600658168 /* HJHeartView.m in Sources */,
+				D2FC81131E83720000185C55 /* HJPrivacy.m in Sources */,
+				D2FC81161E83752700185C55 /* HJImagePickerController.m in Sources */,
 				D28579E21CC9C12100380C4B /* HJBaseModel.m in Sources */,
 				D2DBC1521E78D6EA00B19F1D /* ScanViewController.m in Sources */,
 				D2E637CF1BA7B22F002BE37E /* MTStatusBarOverlay.m in Sources */,
@@ -498,6 +544,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4W5H293S5Y;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_PREFIX_HEADER = HJDog/PrefixHeader.pch;
 				INFOPLIST_FILE = HJDog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -511,6 +558,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4W5H293S5Y;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_PREFIX_HEADER = HJDog/PrefixHeader.pch;
 				INFOPLIST_FILE = HJDog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -597,6 +645,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4W5H293S5Y;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_PREFIX_HEADER = HJDog/PrefixHeader.pch;
 				INFOPLIST_FILE = HJDog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

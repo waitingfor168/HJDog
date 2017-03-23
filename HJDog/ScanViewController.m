@@ -8,11 +8,15 @@
 
 #import "ScanViewController.h"
 #import "HJScanManager.h"
+#import "HJImagePickerController.h"
+#import "GenerateViewController.h"
+#import "UIImage+HJDetector.h"
 
 @interface ScanViewController () {
 
     HJScanManager *scanManage;
 }
+@property (weak, nonatomic) IBOutlet UIView *baseView;
 
 @end
 
@@ -32,6 +36,8 @@
         [manager sessionStop];
         [weakSelf p_showAlert:message];
     }];
+    
+    [self.view bringSubviewToFront:self.baseView];
 }
 
 - (void)dealloc {
@@ -43,6 +49,24 @@
     [super didReceiveMemoryWarning];
     
     NSLog(@"%s", __func__);
+}
+
+#pragma mark - Action
+
+- (IBAction)openPhotoAction:(id)sender {
+    
+    WS
+    [[HJImagePickerController hjImagePickerController:self] openPhoto:^(UIImage *image, NSDictionary *info) {
+        SWS
+        NSString *message = [image hjQrDetector] ?: @"不存在，请重新选择。";
+        [strongSelf p_showAlert:message];
+    }];
+}
+
+- (IBAction)generateAction:(id)sender {
+    
+    GenerateViewController *viewController = [[GenerateViewController alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 #pragma mark - Units

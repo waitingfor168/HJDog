@@ -213,6 +213,9 @@
     
     [self.captureMetadataOutput setMetadataObjectsDelegate:self queue:self.videoDataOutputQueue];
     
+    //设置有效扫描区域 暂时不用置CGRectZero
+    //self.captureMetadataOutput.rectOfInterest = CGRectZero;
+    
     //设置扫码支持的编码格式
     self.captureMetadataOutput.metadataObjectTypes = @[AVMetadataObjectTypeQRCode,
                                                        AVMetadataObjectTypeEAN8Code,

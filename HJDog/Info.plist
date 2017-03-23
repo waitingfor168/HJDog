@@ -28,6 +28,10 @@
 	<string>Main</string>
 	<key>NSCameraUsageDescription</key>
 	<string>USE Camera !!!</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>USE Photo !!!</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
