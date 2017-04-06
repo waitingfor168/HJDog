@@ -11,6 +11,7 @@
 #import "HJAccountInfo.h"
 #import "ScanViewController.h"
 #import "MainViewController.h"
+#import "LanguageViewController.h"
 #import "MaskImageViewController.h"
 #import "FingerPrintViewController.h"
 #import "TransformImageViewController.h"
@@ -85,6 +86,12 @@
 - (IBAction)rightAction:(id)sender {
     
     ScanViewController *viewController = [[ScanViewController alloc] init];
+    [self.navigationController pushViewController:viewController animated:YES];
+}
+
+- (IBAction)leftAction:(id)sender {
+    
+    LanguageViewController *viewController = [[LanguageViewController alloc] init];
     [self.navigationController pushViewController:viewController animated:YES];
 }
 

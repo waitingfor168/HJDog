@@ -49,17 +49,30 @@
 
     NSArray *languages = [NSBundle userCurrentlanguages];
     
+    int index = 0;
     for (NSString *language in languages) {
         
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         [button setTitle:language forState:UIControlStateNormal];
-        [button setFrame:CGRectMake(10, 100, 80, 35)];
+        [button setFrame:CGRectMake(10, 100 + 45 * index, 120, 35)];
         [button setBackgroundColor:[UIColor lightGrayColor]];
+        [button addTarget:self action:@selector(changeAction:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:button];
+        
+        index++;
     }
 }
 
 #pragma mark - Action
+
+- (void)changeAction:(UIButton *)button {
+
+    NSString *tittle = [button.titleLabel.text stringByReplacingOccurrencesOfString:@"-CN" withString:@""];
+    if (![tittle isEqualToString:[NSBundle userCurrentLanguage]]) {
+    
+        [NSBundle setUserCurrentlanguage:tittle];
+    }
+}
 
 - (void)changeLanguage {
 

@@ -66,7 +66,7 @@ NSString *NOTIFICATION_HJLANGUAGE_CHANGE = @"notification.hjlanguage.change";
 
 + (NSString *)hj_localizedStringForKey:(NSString *)key value:(NSString *)value table:(NSString *)tableName {
 
-    return [HJLBundle localizedStringForKey:@"invite" value:nil table:tableName];;
+    return [HJLBundle localizedStringForKey:key value:nil table:tableName];;
 }
 
 #pragma mark - NotificationCenter
