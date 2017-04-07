@@ -76,7 +76,9 @@
 
 - (void)changeLanguage {
 
-    NSString *title = [NSBundle hj_localizedStringForKey:@"title"];
+//    NSString *title = [NSBundle hj_localizedStringForKey:@"title"];
+    NSString *title = HJLLocalizedString(@"title", @"instruction");
+//    NSString *title = HJLLocalizedStringFromTable(@"title0", @"hjdog", @"sorry...");
     
     [self.titleLabel setText:title];
 }

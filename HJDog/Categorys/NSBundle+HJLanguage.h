@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+#define HJLLocalizedString(key, comment) \
+[NSBundle hj_localizedStringForKey:(key) value:@"" table:nil]
+#define HJLLocalizedStringFromTable(key, tbl, comment) \
+[NSBundle hj_localizedStringForKey:(key) value:@"" table:(tbl)]
+
 extern NSString *NOTIFICATION_HJLANGUAGE_CHANGE;
 
 @interface NSBundle (HJLanguage)
