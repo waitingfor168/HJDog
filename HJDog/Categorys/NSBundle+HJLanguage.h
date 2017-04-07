@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+#define HJLStringsName  @"hjdog"
 #define HJLLocalizedString(key, comment) \
-[NSBundle hj_localizedStringForKey:(key) value:@"" table:nil]
+[NSBundle hj_localizedStringForKey:(key) value:@"" table:HJLStringsName]
 #define HJLLocalizedStringFromTable(key, tbl, comment) \
 [NSBundle hj_localizedStringForKey:(key) value:@"" table:(tbl)]
 
-extern NSString *NOTIFICATION_HJLANGUAGE_CHANGE;
+FOUNDATION_EXTERN NSString *const NOTIFICATION_HJLANGUAGE_CHANGE_KEY;
 
 @interface NSBundle (HJLanguage)
 

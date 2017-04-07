@@ -10,10 +10,9 @@
 
 #define HJLNotificationCenter [NSNotificationCenter defaultCenter]
 #define HJLUserDefaults [NSUserDefaults standardUserDefaults]
-#define HJLStringsName  @"hjdog"
 
 static NSBundle *HJLBundle = nil;
-NSString *NOTIFICATION_HJLANGUAGE_CHANGE = @"notification.hjlanguage.change";
+NSString *const NOTIFICATION_HJLANGUAGE_CHANGE_KEY = @"notification.hjlanguage.change.key";
 
 @implementation NSBundle (HJLanguage)
 
@@ -51,7 +50,7 @@ NSString *NOTIFICATION_HJLANGUAGE_CHANGE = @"notification.hjlanguage.change";
     [HJLUserDefaults setValue:language forKey:@"userLanguage"];
     [HJLUserDefaults synchronize];
     
-    [HJLNotificationCenter postNotificationName:NOTIFICATION_HJLANGUAGE_CHANGE object:nil];
+    [HJLNotificationCenter postNotificationName:NOTIFICATION_HJLANGUAGE_CHANGE_KEY object:nil];
 }
 
 + (NSArray *)userCurrentlanguages {
@@ -73,12 +72,12 @@ NSString *NOTIFICATION_HJLANGUAGE_CHANGE = @"notification.hjlanguage.change";
 
 + (void)hj_addNotification:(NSObject *)target selector:(SEL)aSelector {
     
-    [HJLNotificationCenter addObserver:target selector:aSelector name:NOTIFICATION_HJLANGUAGE_CHANGE object:nil];
+    [HJLNotificationCenter addObserver:target selector:aSelector name:NOTIFICATION_HJLANGUAGE_CHANGE_KEY object:nil];
 }
 
 + (void)hj_removeNotification:(NSObject *)target {
 
-    [HJLNotificationCenter removeObserver:target name:NOTIFICATION_HJLANGUAGE_CHANGE object:nil];
+    [HJLNotificationCenter removeObserver:target name:NOTIFICATION_HJLANGUAGE_CHANGE_KEY object:nil];
 }
 
 @end
