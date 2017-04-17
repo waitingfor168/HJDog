@@ -17,6 +17,7 @@
 		D241E88B1DB8AFA50013F16D /* TransformImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D241E8891DB8AFA50013F16D /* TransformImageViewController.m */; };
 		D241E88C1DB8AFA50013F16D /* TransformImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D241E88A1DB8AFA50013F16D /* TransformImageViewController.xib */; };
 		D24911171BA6DEE600658168 /* HJHeartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D24911161BA6DEE600658168 /* HJHeartView.m */; };
+		D2606E1D1EA4D09000BFE727 /* HJScreenRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D2606E1C1EA4D09000BFE727 /* HJScreenRecorder.m */; };
 		D276616D1D40601300CCE061 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D276616B1D40601300CCE061 /* MainViewController.m */; };
 		D276616E1D40601300CCE061 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D276616C1D40601300CCE061 /* MainViewController.xib */; };
 		D27E0E101B5F45DB00ED0138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D27E0E0F1B5F45DB00ED0138 /* main.m */; };
@@ -71,6 +72,8 @@
 		D241E88A1DB8AFA50013F16D /* TransformImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransformImageViewController.xib; sourceTree = "<group>"; };
 		D24911151BA6DEE600658168 /* HJHeartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJHeartView.h; sourceTree = "<group>"; };
 		D24911161BA6DEE600658168 /* HJHeartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJHeartView.m; sourceTree = "<group>"; };
+		D2606E1B1EA4D09000BFE727 /* HJScreenRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJScreenRecorder.h; sourceTree = "<group>"; };
+		D2606E1C1EA4D09000BFE727 /* HJScreenRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJScreenRecorder.m; sourceTree = "<group>"; };
 		D276616A1D40601300CCE061 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		D276616B1D40601300CCE061 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		D276616C1D40601300CCE061 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
@@ -162,6 +165,15 @@
 			path = HJHeartView;
 			sourceTree = "<group>";
 		};
+		D2606E1A1EA4D09000BFE727 /* ScreenRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				D2606E1B1EA4D09000BFE727 /* HJScreenRecorder.h */,
+				D2606E1C1EA4D09000BFE727 /* HJScreenRecorder.m */,
+			);
+			path = ScreenRecorder;
+			sourceTree = "<group>";
+		};
 		D27E0E011B5F45DB00ED0138 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +196,7 @@
 		D27E0E0C1B5F45DB00ED0138 /* HJDog */ = {
 			isa = PBXGroup;
 			children = (
+				D2606E1A1EA4D09000BFE727 /* ScreenRecorder */,
 				D28A93931E9635AD00863C6A /* Categorys */,
 				D2FC81101E8371D600185C55 /* HJUnits */,
 				D2D901411E77FBF8008AADC1 /* HJScan */,
@@ -439,6 +452,7 @@
 				D2FC81201E83A55800185C55 /* GenerateViewController.m in Sources */,
 				D276616D1D40601300CCE061 /* MainViewController.m in Sources */,
 				D2FC811C1E83A0B000185C55 /* NSString+HJGenerateImage.m in Sources */,
+				D2606E1D1EA4D09000BFE727 /* HJScreenRecorder.m in Sources */,
 				D2FC81191E83950300185C55 /* UIImage+HJDetector.m in Sources */,
 				D2180FE61CC8B49B002E7609 /* HJAccountInfo.m in Sources */,
 				D28A93961E9635AD00863C6A /* NSBundle+HJLanguage.m in Sources */,
