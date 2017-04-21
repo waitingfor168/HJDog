@@ -61,6 +61,7 @@
 		D209860D1D9CEB530081F0FF /* FingerPrintViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FingerPrintViewController.m; sourceTree = "<group>"; };
 		D209860E1D9CEB530081F0FF /* FingerPrintViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FingerPrintViewController.xib; sourceTree = "<group>"; };
 		D210F67B1B88C5AC00E153D3 /* 111@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "111@2x.png"; sourceTree = "<group>"; };
+		D212AE631EA9E13800723065 /* HJSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJSingleton.h; sourceTree = "<group>"; };
 		D2180FE41CC8B49B002E7609 /* HJAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJAccountInfo.h; sourceTree = "<group>"; };
 		D2180FE51CC8B49B002E7609 /* HJAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJAccountInfo.m; sourceTree = "<group>"; };
 		D228860A1B67CA0C00EB4708 /* 123.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = 123.html; sourceTree = "<group>"; };
@@ -231,6 +232,7 @@
 				D2E637C11BA7ACEA002BE37E /* TestVC_class_addMethodViewController.h */,
 				D2E637C21BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m */,
 				D2FC810E1E83717100185C55 /* HJHeader.h */,
+				D212AE631EA9E13800723065 /* HJSingleton.h */,
 				D2FC810F1E83717100185C55 /* PrefixHeader.pch */,
 				D27E0E171B5F45DB00ED0138 /* Main.storyboard */,
 				D27E0E1A1B5F45DB00ED0138 /* Images.xcassets */,

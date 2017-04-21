@@ -12,18 +12,7 @@
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <Photos/Photos.h>
 
-@implementation HJPrivacy
-
-+ (instancetype)defaultInstance {
-    
-    static HJPrivacy *instance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        instance = [[HJPrivacy alloc] init];
-    });
-    
-    return instance;
-}
+hjimplementation_sio(HJPrivacy)
 
 - (void)accessLibrary:(HJALAuthorization)block {
     

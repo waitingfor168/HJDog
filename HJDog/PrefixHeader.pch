@@ -24,6 +24,7 @@
 #endif
 
 #import "HJHeader.h"
+#import "HJSingleton.h"
 //#import "PJCAppKey.h"
 //#import "PJCUserDefaults.h"
 

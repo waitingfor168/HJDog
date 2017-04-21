@@ -60,9 +60,11 @@
 /** 弱引用 */
 #define WS __weak typeof(self) weakSelf = self;
 #define WeakObj(obj) __weak typeof(obj) weakObj = obj;
+#define WeakTarg(targ) __weak typeof(targ) weak##targ = targ;
 
 /** 强引用 */
 #define SWS __weak typeof(weakSelf) strongSelf = weakSelf;
 #define StrongObj(obj) __strong typeof(obj) strongObj = obj;
+#define StrongTarg(targ) __strong typeof(targ) strong##targ = targ;
 
 #endif /* HJHeader_h */

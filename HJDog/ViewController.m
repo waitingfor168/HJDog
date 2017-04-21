@@ -16,17 +16,6 @@
 #import "FingerPrintViewController.h"
 #import "TransformImageViewController.h"
 
-/** 弱引用 */
-#define WS __weak typeof(self) weakSelf = self;
-#define WeakObj(obj) __weak typeof(obj) weakObj = obj;
-#define WeakTast(tast) __weak typeof(tast) weak_##tast = tast;
-
-/** 强引用 */
-#define SWS __weak typeof(weakSelf) strongSelf = weakSelf;
-#define StrongObj(obj) __strong typeof(obj) strongObj = obj;
-#define StrongTast(tast) __strong typeof(tast) strong_##tast = tast;
-
-
 @interface ViewController () <UIWebViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate> {
     
     NSString *callback; // 定义变量用于保存返回函数

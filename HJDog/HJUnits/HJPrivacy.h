@@ -11,14 +11,22 @@
 typedef void(^HJALAuthorization)(BOOL status);
 typedef void(^HJAVAuthorization)(BOOL status);
 
-@interface HJPrivacy : NSObject
+#define hjinterface_sio(name) \
+@interface name : NSObject \
++ (instancetype)sharedInstance;
 
-/**
- *  获取全局唯一的一个对象
- *
- *  @return 对象
- */
-+ (instancetype)defaultInstance;
+#define hjimplementation_sio(name) \
+@implementation name \
++ (instancetype)sharedInstance { \
+    static name *instance = nil; \
+    static dispatch_once_t onceToken; \
+    dispatch_once(&onceToken, ^{ \
+        instance = [[name alloc] init]; \
+    }); \
+    return instance; \
+}
+
+hjinterface_sio(HJPrivacy)
 
 /**
  *  检测相册权限

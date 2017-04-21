@@ -47,7 +47,7 @@
         self.cameraBlock = block;
     }
     
-    [[HJPrivacy defaultInstance] accessCamera:^(BOOL authorized) {
+    [[HJPrivacy sharedInstance] accessCamera:^(BOOL authorized) {
         
         if (authorized) {
             
@@ -71,7 +71,7 @@
         self.photoBlock = block;
     }
     
-    [[HJPrivacy defaultInstance] accessLibrary:^(BOOL authorized) {
+    [[HJPrivacy sharedInstance] accessLibrary:^(BOOL authorized) {
         
         if (authorized) {
             
