@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #import "HJAccountInfo.h"
+#import "UndoViewController.h"
 #import "ScanViewController.h"
 #import "MainViewController.h"
 #import "LanguageViewController.h"
@@ -37,7 +38,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-//    [self performSelector:@selector(p_trst) withObject:nil afterDelay:2.0];
+    [self performSelector:@selector(p_trst) withObject:nil afterDelay:2.0];
 }
 
 - (void)p_testInfo {
@@ -93,12 +94,13 @@
 //        NSLog(@"==>>:%@", strong_weak_mainViewController);
 //    }];
     
+    UndoViewController *viewController = [[UndoViewController alloc] init];
 //    FingerPrintViewController *viewController = [[FingerPrintViewController alloc] init];
 //    MaskImageViewController *viewController = [[MaskImageViewController alloc] init];
 //    TransformImageViewController *viewController = [[TransformImageViewController alloc] init];
-//    [self presentViewController:viewController animated:YES completion:^{
-//        
-//    }];
+    [self presentViewController:viewController animated:YES completion:^{
+        
+    }];
 }
 
 - (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType

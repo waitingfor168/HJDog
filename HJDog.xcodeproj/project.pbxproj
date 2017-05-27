@@ -38,6 +38,8 @@
 		D2DBC1531E78D6EA00B19F1D /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2DBC1511E78D6EA00B19F1D /* ScanViewController.xib */; };
 		D2E637C31BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E637C21BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m */; };
 		D2E637CF1BA7B22F002BE37E /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E637CE1BA7B22F002BE37E /* MTStatusBarOverlay.m */; };
+		D2FA898E1ED9793B00C2E613 /* UndoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FA898C1ED9793A00C2E613 /* UndoViewController.m */; };
+		D2FA898F1ED9793B00C2E613 /* UndoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FA898D1ED9793A00C2E613 /* UndoViewController.xib */; };
 		D2FC81131E83720000185C55 /* HJPrivacy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FC81121E83720000185C55 /* HJPrivacy.m */; };
 		D2FC81161E83752700185C55 /* HJImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FC81151E83752700185C55 /* HJImagePickerController.m */; };
 		D2FC81191E83950300185C55 /* UIImage+HJDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FC81181E83950300185C55 /* UIImage+HJDetector.m */; };
@@ -112,6 +114,9 @@
 		D2E637C21BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC_class_addMethodViewController.m; sourceTree = "<group>"; };
 		D2E637CD1BA7B22F002BE37E /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTStatusBarOverlay.h; sourceTree = "<group>"; };
 		D2E637CE1BA7B22F002BE37E /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTStatusBarOverlay.m; sourceTree = "<group>"; };
+		D2FA898B1ED9793A00C2E613 /* UndoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UndoViewController.h; sourceTree = "<group>"; };
+		D2FA898C1ED9793A00C2E613 /* UndoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UndoViewController.m; sourceTree = "<group>"; };
+		D2FA898D1ED9793A00C2E613 /* UndoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UndoViewController.xib; sourceTree = "<group>"; };
 		D2FC810E1E83717100185C55 /* HJHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJHeader.h; sourceTree = "<group>"; };
 		D2FC810F1E83717100185C55 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D2FC81111E83720000185C55 /* HJPrivacy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPrivacy.h; sourceTree = "<group>"; };
@@ -208,6 +213,9 @@
 				D27E0E121B5F45DB00ED0138 /* AppDelegate.m */,
 				D27E0E141B5F45DB00ED0138 /* ViewController.h */,
 				D27E0E151B5F45DB00ED0138 /* ViewController.m */,
+				D2FA898B1ED9793A00C2E613 /* UndoViewController.h */,
+				D2FA898C1ED9793A00C2E613 /* UndoViewController.m */,
+				D2FA898D1ED9793A00C2E613 /* UndoViewController.xib */,
 				D28A93971E9635BA00863C6A /* LanguageViewController.h */,
 				D28A93981E9635BA00863C6A /* LanguageViewController.m */,
 				D28A93991E9635BA00863C6A /* LanguageViewController.xib */,
@@ -407,6 +415,7 @@
 				D28A939E1E96375000863C6A /* hjdog.strings in Resources */,
 				D228860B1B67CA0C00EB4708 /* 123.html in Resources */,
 				D27E0E1E1B5F45DB00ED0138 /* LaunchScreen.xib in Resources */,
+				D2FA898F1ED9793B00C2E613 /* UndoViewController.xib in Resources */,
 				D27E0E1B1B5F45DB00ED0138 /* Images.xcassets in Resources */,
 				D20986101D9CEB530081F0FF /* FingerPrintViewController.xib in Resources */,
 				D241E88C1DB8AFA50013F16D /* TransformImageViewController.xib in Resources */,
@@ -450,6 +459,7 @@
 				D241E88B1DB8AFA50013F16D /* TransformImageViewController.m in Sources */,
 				D2D901441E77FC1E008AADC1 /* HJScanManager.m in Sources */,
 				D27E0E101B5F45DB00ED0138 /* main.m in Sources */,
+				D2FA898E1ED9793B00C2E613 /* UndoViewController.m in Sources */,
 				D2E637C31BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m in Sources */,
 				D2FC81201E83A55800185C55 /* GenerateViewController.m in Sources */,
 				D276616D1D40601300CCE061 /* MainViewController.m in Sources */,
