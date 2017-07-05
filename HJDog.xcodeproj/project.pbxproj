@@ -32,6 +32,7 @@
 		D28A939A1E9635BA00863C6A /* LanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D28A93981E9635BA00863C6A /* LanguageViewController.m */; };
 		D28A939B1E9635BA00863C6A /* LanguageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D28A93991E9635BA00863C6A /* LanguageViewController.xib */; };
 		D28A939E1E96375000863C6A /* hjdog.strings in Resources */ = {isa = PBXBuildFile; fileRef = D28A93A01E96375000863C6A /* hjdog.strings */; };
+		D2A147E31EE65019005A0D76 /* HJURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A147E21EE65019005A0D76 /* HJURLProtocol.m */; };
 		D2ABED801B66580D00C6D968 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2ABED7F1B66580D00C6D968 /* CoreLocation.framework */; };
 		D2D901441E77FC1E008AADC1 /* HJScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D901431E77FC1E008AADC1 /* HJScanManager.m */; };
 		D2DBC1521E78D6EA00B19F1D /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DBC1501E78D6EA00B19F1D /* ScanViewController.m */; };
@@ -104,6 +105,8 @@
 		D28A93A31E96377200863C6A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/hjdog.strings"; sourceTree = "<group>"; };
 		D28A93A41E963CB500863C6A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		D28A93A51E963CB600863C6A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2A147E11EE65019005A0D76 /* HJURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJURLProtocol.h; sourceTree = "<group>"; };
+		D2A147E21EE65019005A0D76 /* HJURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJURLProtocol.m; sourceTree = "<group>"; };
 		D2ABED7F1B66580D00C6D968 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D2D901421E77FC1E008AADC1 /* HJScanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJScanManager.h; sourceTree = "<group>"; };
 		D2D901431E77FC1E008AADC1 /* HJScanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJScanManager.m; sourceTree = "<group>"; };
@@ -239,6 +242,8 @@
 				D241E88A1DB8AFA50013F16D /* TransformImageViewController.xib */,
 				D2E637C11BA7ACEA002BE37E /* TestVC_class_addMethodViewController.h */,
 				D2E637C21BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m */,
+				D2A147E11EE65019005A0D76 /* HJURLProtocol.h */,
+				D2A147E21EE65019005A0D76 /* HJURLProtocol.m */,
 				D2FC810E1E83717100185C55 /* HJHeader.h */,
 				D212AE631EA9E13800723065 /* HJSingleton.h */,
 				D2FC810F1E83717100185C55 /* PrefixHeader.pch */,
@@ -453,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D22A265D1DB4756F0070974E /* MaskImageViewController.m in Sources */,
+				D2A147E31EE65019005A0D76 /* HJURLProtocol.m in Sources */,
 				D28A939A1E9635BA00863C6A /* LanguageViewController.m in Sources */,
 				D27E0E161B5F45DB00ED0138 /* ViewController.m in Sources */,
 				D27E0E131B5F45DB00ED0138 /* AppDelegate.m in Sources */,

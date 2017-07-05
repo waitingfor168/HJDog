@@ -16,6 +16,7 @@
 #import "MaskImageViewController.h"
 #import "FingerPrintViewController.h"
 #import "TransformImageViewController.h"
+#import "HJURLProtocol.h"
 
 @interface ViewController () <UIWebViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate> {
     
@@ -30,15 +31,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+//    [NSURLProtocol registerClass:[HJURLProtocol class]];
 //    [self p_testInfo];
-//    [self p_testWebView];
+    [self p_testWebView];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    [self performSelector:@selector(p_trst) withObject:nil afterDelay:2.0];
+//    [self performSelector:@selector(p_trst) withObject:nil afterDelay:2.0];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    
+//    [NSURLProtocol unregisterClass:[HJURLProtocol class]];
 }
 
 - (void)p_testInfo {
@@ -65,11 +72,12 @@
 
 - (void)p_testWebView {
 
-    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"123" ofType:@"html"];
-    NSString *htmlString = [[NSString alloc] initWithContentsOfFile:pathString encoding:NSUTF8StringEncoding error:nil];
-    [self.webViewLogin loadHTMLString:htmlString baseURL:nil];
+//    NSString *pathString = [[NSBundle mainBundle] pathForResource:@"123" ofType:@"html"];
+//    NSString *htmlString = [[NSString alloc] initWithContentsOfFile:pathString encoding:NSUTF8StringEncoding error:nil];
+//    [self.webViewLogin loadHTMLString:htmlString baseURL:nil];
     
     //     [self.webViewLogin loadRequest:[[NSURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:@"http://180.76.154.254/mobile/embed/123.html"]]];
+    [self.webViewLogin loadRequest:[[NSURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:@"https://www.baidu.com"]]];
     self.webViewLogin.delegate = self;
 }
 
