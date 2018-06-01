@@ -34,6 +34,7 @@
 		D28A939E1E96375000863C6A /* hjdog.strings in Resources */ = {isa = PBXBuildFile; fileRef = D28A93A01E96375000863C6A /* hjdog.strings */; };
 		D2A147E31EE65019005A0D76 /* HJURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A147E21EE65019005A0D76 /* HJURLProtocol.m */; };
 		D2ABED801B66580D00C6D968 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2ABED7F1B66580D00C6D968 /* CoreLocation.framework */; };
+		D2B47B4220C12F8F00C4F253 /* AutoReleaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B47B4020C12F8F00C4F253 /* AutoReleaseViewController.m */; };
 		D2D901441E77FC1E008AADC1 /* HJScanManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D901431E77FC1E008AADC1 /* HJScanManager.m */; };
 		D2DBC1521E78D6EA00B19F1D /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DBC1501E78D6EA00B19F1D /* ScanViewController.m */; };
 		D2DBC1531E78D6EA00B19F1D /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2DBC1511E78D6EA00B19F1D /* ScanViewController.xib */; };
@@ -110,6 +111,8 @@
 		D2A147E11EE65019005A0D76 /* HJURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJURLProtocol.h; sourceTree = "<group>"; };
 		D2A147E21EE65019005A0D76 /* HJURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJURLProtocol.m; sourceTree = "<group>"; };
 		D2ABED7F1B66580D00C6D968 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D2B47B3F20C12F8F00C4F253 /* AutoReleaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleaseViewController.h; sourceTree = "<group>"; };
+		D2B47B4020C12F8F00C4F253 /* AutoReleaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoReleaseViewController.m; sourceTree = "<group>"; };
 		D2D901421E77FC1E008AADC1 /* HJScanManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJScanManager.h; sourceTree = "<group>"; };
 		D2D901431E77FC1E008AADC1 /* HJScanManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJScanManager.m; sourceTree = "<group>"; };
 		D2DBC14F1E78D6EA00B19F1D /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
@@ -210,6 +213,7 @@
 		D27E0E0C1B5F45DB00ED0138 /* HJDog */ = {
 			isa = PBXGroup;
 			children = (
+				D2B47B3E20C12F4C00C4F253 /* AutoRelease */,
 				D2EC437420BFD36300115068 /* isa */,
 				D2606E1A1EA4D09000BFE727 /* ScreenRecorder */,
 				D28A93931E9635AD00863C6A /* Categorys */,
@@ -297,6 +301,15 @@
 				D28A93951E9635AD00863C6A /* NSBundle+HJLanguage.m */,
 			);
 			path = Categorys;
+			sourceTree = "<group>";
+		};
+		D2B47B3E20C12F4C00C4F253 /* AutoRelease */ = {
+			isa = PBXGroup;
+			children = (
+				D2B47B3F20C12F8F00C4F253 /* AutoReleaseViewController.h */,
+				D2B47B4020C12F8F00C4F253 /* AutoReleaseViewController.m */,
+			);
+			path = AutoRelease;
 			sourceTree = "<group>";
 		};
 		D2D901411E77FBF8008AADC1 /* HJScan */ = {
@@ -481,6 +494,7 @@
 				D27E0E131B5F45DB00ED0138 /* AppDelegate.m in Sources */,
 				D241E88B1DB8AFA50013F16D /* TransformImageViewController.m in Sources */,
 				D2D901441E77FC1E008AADC1 /* HJScanManager.m in Sources */,
+				D2B47B4220C12F8F00C4F253 /* AutoReleaseViewController.m in Sources */,
 				D27E0E101B5F45DB00ED0138 /* main.m in Sources */,
 				D2FA898E1ED9793B00C2E613 /* UndoViewController.m in Sources */,
 				D2EC437720BFD36400115068 /* HJPerson.m in Sources */,

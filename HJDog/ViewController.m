@@ -16,6 +16,7 @@
 #import "MaskImageViewController.h"
 #import "FingerPrintViewController.h"
 #import "TransformImageViewController.h"
+#import "AutoReleaseViewController.h"
 #import "HJURLProtocol.h"
 #import "HJPerson.h"
 
@@ -35,13 +36,13 @@
 //    [NSURLProtocol registerClass:[HJURLProtocol class]];
 //    [self p_testInfo];
 //    [self p_testWebView];
-    [self p_isa];
+//    [self p_isa];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-//    [self performSelector:@selector(p_trst) withObject:nil afterDelay:2.0];
+    [self performSelector:@selector(p_trst) withObject:nil afterDelay:2.0];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
@@ -109,7 +110,8 @@
 //        NSLog(@"==>>:%@", strong_weak_mainViewController);
 //    }];
     
-    UndoViewController *viewController = [[UndoViewController alloc] init];
+    AutoReleaseViewController *viewController = [[AutoReleaseViewController alloc] init];
+//    UndoViewController *viewController = [[UndoViewController alloc] init];
 //    FingerPrintViewController *viewController = [[FingerPrintViewController alloc] init];
 //    MaskImageViewController *viewController = [[MaskImageViewController alloc] init];
 //    TransformImageViewController *viewController = [[TransformImageViewController alloc] init];
