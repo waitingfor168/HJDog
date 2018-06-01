@@ -39,6 +39,8 @@
 		D2DBC1531E78D6EA00B19F1D /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2DBC1511E78D6EA00B19F1D /* ScanViewController.xib */; };
 		D2E637C31BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E637C21BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m */; };
 		D2E637CF1BA7B22F002BE37E /* MTStatusBarOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E637CE1BA7B22F002BE37E /* MTStatusBarOverlay.m */; };
+		D2EC437720BFD36400115068 /* HJPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = D2EC437520BFD36300115068 /* HJPerson.m */; };
+		D2EC437920BFD3BE00115068 /* isa.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EC437820BFD3BE00115068 /* isa.png */; };
 		D2FA898E1ED9793B00C2E613 /* UndoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FA898C1ED9793A00C2E613 /* UndoViewController.m */; };
 		D2FA898F1ED9793B00C2E613 /* UndoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FA898D1ED9793A00C2E613 /* UndoViewController.xib */; };
 		D2FC81131E83720000185C55 /* HJPrivacy.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FC81121E83720000185C55 /* HJPrivacy.m */; };
@@ -117,6 +119,9 @@
 		D2E637C21BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC_class_addMethodViewController.m; sourceTree = "<group>"; };
 		D2E637CD1BA7B22F002BE37E /* MTStatusBarOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTStatusBarOverlay.h; sourceTree = "<group>"; };
 		D2E637CE1BA7B22F002BE37E /* MTStatusBarOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTStatusBarOverlay.m; sourceTree = "<group>"; };
+		D2EC437520BFD36300115068 /* HJPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJPerson.m; sourceTree = "<group>"; };
+		D2EC437620BFD36300115068 /* HJPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJPerson.h; sourceTree = "<group>"; };
+		D2EC437820BFD3BE00115068 /* isa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = isa.png; sourceTree = "<group>"; };
 		D2FA898B1ED9793A00C2E613 /* UndoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UndoViewController.h; sourceTree = "<group>"; };
 		D2FA898C1ED9793A00C2E613 /* UndoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UndoViewController.m; sourceTree = "<group>"; };
 		D2FA898D1ED9793A00C2E613 /* UndoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UndoViewController.xib; sourceTree = "<group>"; };
@@ -205,6 +210,7 @@
 		D27E0E0C1B5F45DB00ED0138 /* HJDog */ = {
 			isa = PBXGroup;
 			children = (
+				D2EC437420BFD36300115068 /* isa */,
 				D2606E1A1EA4D09000BFE727 /* ScreenRecorder */,
 				D28A93931E9635AD00863C6A /* Categorys */,
 				D2FC81101E8371D600185C55 /* HJUnits */,
@@ -317,6 +323,16 @@
 			path = MTStatusBarOverlay;
 			sourceTree = "<group>";
 		};
+		D2EC437420BFD36300115068 /* isa */ = {
+			isa = PBXGroup;
+			children = (
+				D2EC437820BFD3BE00115068 /* isa.png */,
+				D2EC437620BFD36300115068 /* HJPerson.h */,
+				D2EC437520BFD36300115068 /* HJPerson.m */,
+			);
+			path = isa;
+			sourceTree = "<group>";
+		};
 		D2FC81101E8371D600185C55 /* HJUnits */ = {
 			isa = PBXGroup;
 			children = (
@@ -419,6 +435,7 @@
 				D27E0E191B5F45DB00ED0138 /* Main.storyboard in Resources */,
 				D28A939E1E96375000863C6A /* hjdog.strings in Resources */,
 				D228860B1B67CA0C00EB4708 /* 123.html in Resources */,
+				D2EC437920BFD3BE00115068 /* isa.png in Resources */,
 				D27E0E1E1B5F45DB00ED0138 /* LaunchScreen.xib in Resources */,
 				D2FA898F1ED9793B00C2E613 /* UndoViewController.xib in Resources */,
 				D27E0E1B1B5F45DB00ED0138 /* Images.xcassets in Resources */,
@@ -466,6 +483,7 @@
 				D2D901441E77FC1E008AADC1 /* HJScanManager.m in Sources */,
 				D27E0E101B5F45DB00ED0138 /* main.m in Sources */,
 				D2FA898E1ED9793B00C2E613 /* UndoViewController.m in Sources */,
+				D2EC437720BFD36400115068 /* HJPerson.m in Sources */,
 				D2E637C31BA7ACEA002BE37E /* TestVC_class_addMethodViewController.m in Sources */,
 				D2FC81201E83A55800185C55 /* GenerateViewController.m in Sources */,
 				D276616D1D40601300CCE061 /* MainViewController.m in Sources */,
@@ -623,7 +641,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = HJDog/PrefixHeader.pch;
 				INFOPLIST_FILE = HJDog/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -637,7 +655,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = HJDog/PrefixHeader.pch;
 				INFOPLIST_FILE = HJDog/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -725,7 +743,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PREFIX_HEADER = HJDog/PrefixHeader.pch;
 				INFOPLIST_FILE = HJDog/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

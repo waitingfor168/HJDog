@@ -17,6 +17,7 @@
 #import "FingerPrintViewController.h"
 #import "TransformImageViewController.h"
 #import "HJURLProtocol.h"
+#import "HJPerson.h"
 
 @interface ViewController () <UIWebViewDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate> {
     
@@ -33,7 +34,8 @@
     [super viewDidLoad];
 //    [NSURLProtocol registerClass:[HJURLProtocol class]];
 //    [self p_testInfo];
-    [self p_testWebView];
+//    [self p_testWebView];
+    [self p_isa];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -46,6 +48,11 @@
     [super viewDidDisappear:animated];
     
 //    [NSURLProtocol unregisterClass:[HJURLProtocol class]];
+}
+
+- (void)p_isa {
+    
+    [[[HJPerson alloc] init] objectMethodPrint];
 }
 
 - (void)p_testInfo {
